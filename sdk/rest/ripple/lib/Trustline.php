@@ -6,7 +6,7 @@ use ctur\sdk\rest\ripple\Ripple;
  * Trustlines
  * @see https://ripple.com/build/ripple-rest/#get-trustlines
  *
- * @package app\modules\ripple\components
+ * @package ctur\sdk\rest\ripple\lib
  *
  * @author Cyril Turkevich
  */

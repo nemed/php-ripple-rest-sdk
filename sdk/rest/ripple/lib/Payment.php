@@ -8,7 +8,7 @@ use ctur\sdk\rest\ripple\Ripple;
  * and resubmit the transaction up to 10 times if rippled reports an initial error that can be solved automatically.
  * @see https://ripple.com/build/ripple-rest/#prepare-payment
  *
- * @package app\modules\ripple\components
+ * @package ctur\sdk\rest\ripple\lib
  *
  * @author Cyril Turkevich
  */

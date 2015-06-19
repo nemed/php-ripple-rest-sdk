@@ -9,7 +9,7 @@ use ctur\sdk\rest\ripple\Ripple;
  * It is expected that accounts will correspond loosely to individual users.
  * @see https://ripple.com/build/rest-tool/#generate-wallet
  *
- * @package app\modules\ripple\components
+ * @package ctur\sdk\rest\ripple\lib
  *
  * @author Cyril Turkevich
  */

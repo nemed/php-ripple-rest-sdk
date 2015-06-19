@@ -6,7 +6,7 @@ use ctur\sdk\rest\ripple\Ripple;
  * Ripple Utility
  * @see https://ripple.com/build/ripple-rest/#retrieve-ripple-transaction
  *
- * @package app\modules\ripple\components
+ * @package ctur\sdk\rest\ripple\lib
  *
  * @author Cyril Turkevich
  */

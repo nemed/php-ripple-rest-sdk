@@ -9,7 +9,7 @@ use ctur\sdk\rest\ripple\Ripple;
  * so you can save the most recently-known transaction and easily iterate forward to find any notifications that are newer than that.
  * @see https://ripple.com/build/ripple-rest/#check-notifications
  *
- * @package app\modules\ripple\components
+ * @package ctur\sdk\rest\ripple\lib
  *
  * @author Cyril Turkevich
  */

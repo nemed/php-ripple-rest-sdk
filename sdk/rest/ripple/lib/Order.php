@@ -6,7 +6,7 @@ use ctur\sdk\rest\ripple\Ripple;
  * Class Order implements REST method for get orders data.
  * @see https://ripple.com/build/ripple-rest/#place-order
  *
- * @package app\modules\ripple\components
+ * @package ctur\sdk\rest\ripple\lib
  *
  * @author Cyril Turkevich
  */

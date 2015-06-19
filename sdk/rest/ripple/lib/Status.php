@@ -8,7 +8,7 @@ use ctur\sdk\rest\ripple\Ripple;
  * and to retrieve information about the current status of the API.
  * @see https://ripple.com/build/ripple-rest/#check-connection
  *
- * @package app\modules\ripple\components
+ * @package ctur\sdk\rest\ripple\lib
  *
  * @author Cyril Turkevich
  */
