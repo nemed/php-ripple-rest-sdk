@@ -38,10 +38,11 @@ abstract class Ripple
     /**
      * Returns ripple component.
      * @param string $type Use const from ctur\sdk\rest\ripple\lib\Enum
+     * @param string $serverUrl api server url.
      * @return Ripple ripple component.
      * @throws Exception Bad Ripple REST API Component. Use ctur\sdk\rest\ripple\lib\Enum
      */
-    public static function factory($type)
+    public static function factory($type, $serverUrl)
     {
         if (!isset(Enum::listData()[$type])) {
             throw new Exception('Bad Ripple REST API Component. Use ctur\sdk\rest\ripple\lib\Enum');
@@ -50,7 +51,7 @@ abstract class Ripple
         $type = Enum::listData()[$type];
         if (!isset(self::$_cloud[$type])) {
             $class = "\\ctur\\sdk\\rest\\ripple\\lib\\{$type}";
-            self::$_cloud[$type] = new $class();
+            self::$_cloud[$type] = new $class($serverUrl);
         }
 
         return self::$_cloud[$type];

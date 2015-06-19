@@ -1,4 +1,5 @@
 # PHP Ripple REST SDK
+See Ripple REST API documentation https://ripple.com/build/rest-tool/
 ## Installation
 
 Installation with Composer
@@ -7,7 +8,7 @@ Add in composer.json
 ~~~
     "require": {
         ...
-        "turkevich/rest-client":"dev-master"
+        "turkevich/php-ripple-rest-sdk":"dev-master"
     }
 ~~~
 
@@ -15,11 +16,7 @@ Well done!
 
 ## Example call
 ~~~
-    $result = (new Client(Client::POST, $url, $data))
-        ->setContentType(Client::JSON)
-        ->setUserAgent('Yah')
-        ->setHttpAuth('aloha', '123123123')
-        ->call();
+    $result = \ctur\sdk\rest\ripple\Ripple::factory(\ctur\sdk\rest\ripple\lib\Enum::ACCOUNT, 'https://api.ripple.com/v1')->generateWallet();
 ~~~
 
 Enjoy, guys!
