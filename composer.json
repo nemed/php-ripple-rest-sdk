@@ -1,0 +1,34 @@
+{
+    "name": "turkevich/pphp-ripple-rest-sdk",
+    "description": "PHP Ripple REST SDK",
+    "keywords": [
+        "php",
+        "ripple",
+        "rest",
+        "restful",
+        "sdk",
+        "php rest sdk",
+        "php ripple sdk rest client",
+        "ripple sdk rest client",
+        "php restful",
+        "php restful client",
+        "php ripple restful client"
+    ],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Cyril Turkevich",
+            "email": "cyril.turkevich@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "turkevich/php-abstract-enum": "*",
+        "turkevich/php-restful-client": "*"
+    },
+    "autoload": {
+        "psr-4": {"ctur\\": ""}
+    }
+}
