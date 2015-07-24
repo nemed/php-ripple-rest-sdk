@@ -22,11 +22,9 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0"
-    },
-    "require-dev": {
-        "turkevich/php-abstract-enum": "*",
-        "turkevich/php-restful-client": "*"
+        "php": ">=5.4.0",
+		"turkevich/php-abstract-enum": "1.0",
+        "turkevich/php-restful-client": "1.0"
     },
     "autoload": {
         "psr-4": {"ctur\\": ""}

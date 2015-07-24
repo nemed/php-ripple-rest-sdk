@@ -24,6 +24,7 @@ abstract class Ripple
         'POST'   => Client::POST,
         'GET'    => Client::GET,
         'PUT'    => Client::PUT,
+		'PATCH'  => Client::PATCH,
         'DELETE' => Client::DELETE
     ];
 
@@ -88,7 +89,8 @@ abstract class Ripple
      */
     public function request($method, $url, $data = [])
     {
-        return (new Client($this->getMethod($method), $this->getUrl($url), $data))
+        return (new Client())
+		    ->requestParams($this->getMethod($method), $this->getUrl($url), $data)
             ->setContentType(Client::JSON)
             ->setUserAgent('Ripple REST PHP Client/1.0')
             ->call();
